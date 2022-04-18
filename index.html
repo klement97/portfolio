@@ -10,13 +10,18 @@
 </head>
 
 <body>
-    <div class="content">
-        <textarea class="command">
-            <p>Hello, World!</p>
-        </textarea>
-    </div>
+<div class="terminal" id="terminal">
 
-    <script src="index.js"></script>
+    <!-- History will be written with JS here. -->
+    <div id="history"></div>
+
+    <div class="line">
+        <span id="path"> >/ </span>
+        <input type="text" id="input" autofocus>
+    </div>
+</div>
+
+<script type="module" src="index.js"></script>
 </body>
 
 </html>
